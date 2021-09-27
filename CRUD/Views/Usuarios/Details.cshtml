@@ -1,0 +1,58 @@
+﻿@model CRUD1.Models.Usuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Apelido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apelido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.setor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.setor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ddd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ddd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoDaEquipe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoDaEquipe)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Nome }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
